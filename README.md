@@ -4,3 +4,13 @@ This program starts by gathering data about the carbon intensity levels in Great
 The user can then use the update() function to update the table with data from the current date. 
 
 The table consists of six columns: id, time_start, time_end, forecasted_carbon, actual_carbon, and carbon_index. Times are divided into half-hour intervals, so each day produces 48 new rows of the table. 
+
+## Set up local environment 
+
+1. Install & start postgres server.
+
+2. Create ```carbon_data``` table. 
+
+3. Run ```python database_setup.py``` to establish table schema in postgres database. 
+
+4. Run ```python carbon.py``` to update database with new rows. 
