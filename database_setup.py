@@ -20,8 +20,8 @@ class Carbon(Base):
     carbon_index = Column(String)
 
     def __repr__(self):
-        return "<User(time_start='%s', time_end='%s', forecasted_carbon='%s', actual_carbon='%s', carbon_index='%s')>" % (self.time_start, \
+        return "<Carbon(time_start='%s', time_end='%s', forecasted_carbon='%s', actual_carbon='%s', carbon_index='%s')>" % (self.time_start, \
             self.time_end, self.forecasted_carbon, self.actual_carbon, self.carbon_index)
 
-# Instatiating the DB
+# Instantiating the DB
 Base.metadata.create_all(engine)
